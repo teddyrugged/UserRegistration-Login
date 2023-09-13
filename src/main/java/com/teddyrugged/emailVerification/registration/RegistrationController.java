@@ -26,6 +26,7 @@ public class RegistrationController {
         return "Success! Kindly check your email to complete registration or ignore mail if you didnt try to register";
     }
 
+//    @PostMapping("/verifyEmail")
     private String applicationUrl(HttpServletRequest request) {
         return "http://"+request.getServerName()+":"+request.getServerPort()+request.getContextPath();
     }
